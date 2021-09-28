@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <Typography variant="caption" display="block" align="right" sx={{ m: 2 }} gutterBottom>
-                Ⓒ Dipti Rani 2021 - All rights reserved
+                Ⓒ Dipti Rani - 2021
             </Typography>
         )
     }

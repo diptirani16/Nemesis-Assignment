@@ -59,7 +59,7 @@ class DeleteData extends Component {
                     </DialogTitle>
                     <DialogContent>
                         <DialogContentText>
-                            This actions can't be undone.
+                            This action can't be undone.
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>
