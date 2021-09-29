@@ -81,6 +81,7 @@ class Edit extends Component {
 
     saveData (id) {
         const { name, username, email, phone, website } = this.state;
+        console.log('hello')
 
         fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
             method: 'PUT',
@@ -97,9 +98,9 @@ class Edit extends Component {
         })
         .then((res) => res.json())
         .then((data) => {
+            console.log(data);
             this.props.result.map(obj => {
                 if(obj.id === id){
-                    console.log(obj)
                     let indexOfOldData = this.props.result.indexOf(obj);
                     let temp = this.props.result;
                     obj = data;
@@ -114,7 +115,6 @@ class Edit extends Component {
         })
 
     }
-
 
     render() {
         return (

@@ -66,7 +66,7 @@ class Add extends Component {
     }
 
     addData () {
-        const { name, username, email, phone, website } = this.state;
+        const { name, username, email, phone, website } = this.state
 
         fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',
@@ -83,7 +83,6 @@ class Add extends Component {
         })
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
             this.setState({
                 open: false
             })

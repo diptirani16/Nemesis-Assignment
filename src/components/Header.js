@@ -3,11 +3,11 @@ import React from 'react';
 import { Component } from 'react';
 
 class Header extends Component {
-    
+        
     render() {
         return (
                 <Box sx={{ flexGrow: 1 }}>
-                    <AppBar position="static" color="secondary">
+                    <AppBar position="fixed" color="secondary">
                         <Toolbar>
                             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                                 Details

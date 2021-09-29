@@ -30,19 +30,22 @@ class HomePage extends Component {
             })
         })
     }
-
+    
     updateState(newData) {
         this.setState({
             result: newData
         })
+        console.log(this.state.result)
     }
+
+
 
       
     render() {
         return (
             <>
             <Container>
-                <TableContainer component={Paper} style={{ marginTop: '5%'}}>
+                <TableContainer component={Paper} style={{ marginTop: '10%'}}>
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                         <TableHead>
                             <TableRow>
