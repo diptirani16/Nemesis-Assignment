@@ -35,7 +35,6 @@ class HomePage extends Component {
         this.setState({
             result: newData
         })
-        console.log(this.state.result)
     }
 
 
